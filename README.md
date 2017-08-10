@@ -1,7 +1,5 @@
 # mixpanel-delete-profiles
-Batch delete Mixpanel profiles.
-
-Read the distinctId from csv and construct delete mixpanel profile query then post to mixpanel engage api.
+Batch delete Mixpanel profiles. Read the `distinctId` from csv and construct delete mixpanel profile query then post to mixpanel engage api.
 
 1. Prepare a `mixpanel-delete-profiles.csv` (require header `distinct_id`). You can query the distinctId by using Mixpanel JQL and then export as csv file:
 ```
@@ -34,4 +32,3 @@ python deleteMixpanelProfile.py
 ```
 
 Mixpanel reference: https://mixpanel.com/help/reference/http#people-analytics-updates
->>>>>>> implement deleteMixpannelProfile
